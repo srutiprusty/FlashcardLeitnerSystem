@@ -29,7 +29,7 @@ export const getAllFlashcards = async (req, res) => {
   }
 };
 
-// Get flashcards due for review (e.g., flashcards that should be reviewed today)
+// Get flashcards due for review ( reviewed today)
 export const getDueFlashcards = async (req, res) => {
   const today = new Date();
   try {

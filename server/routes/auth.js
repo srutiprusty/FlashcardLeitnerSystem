@@ -46,8 +46,7 @@ router.post("/login", async (req, res) => {
 
 // Logout route
 router.get("/logout", (req, res) => {
-  // Optionally, you could also clear the cookies here if you store the JWT in cookies
-  res.clearCookie("token"); // If you set your token in a cookie
+  res.clearCookie("token");
   res.json({ success: true, message: "You have been logged out" });
 });
 

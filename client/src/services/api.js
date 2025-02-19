@@ -1,12 +1,10 @@
 import axios from "axios";
 import dayjs from "dayjs";
 
-// Create an axios instance with a base URL
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "http://localhost:5001/api" });
 
-// Correct API functions using the axios instance
 export const createFlashcard = async (data) => {
-  const res = await API.post("/create", data); // No need for `${API_URL}`
+  const res = await API.post("/create", data);
   return res.data;
 };
 
